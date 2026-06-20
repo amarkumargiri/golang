@@ -18,4 +18,21 @@ func main(){
 	var smallFloat float32 = 255.4555555555 // float32 can only store values up to 5 places
 	fmt.Println(smallFloat)
 	fmt.Printf("variable is of type : %T\n", smallFloat)
+
+
+	// default values and some aliases
+	var anotherVariable int  // default value of int is 0
+	fmt.Println(anotherVariable)
+	fmt.Printf("variable is of type : %T\n", anotherVariable)
+
+	//implicit type
+	var website = "golang.com" // type is inferred from the value assigned
+	fmt.Println(website)
+	fmt.Printf("variable is of type: %T\n", website)
+
+	// no var style
+	numberOfUsers := 3000000 //only works inside functions, cannot be used outside functions, also type is inferred
+	fmt.Println(numberOfUsers)
+	fmt.Printf("variable is of type: %T\n", numberOfUsers)
+	
 }
